@@ -28,6 +28,13 @@ module.exports = {
       'pc': '1440px',
       'test': '1800px',
     },
+    height:{
+      'px-720': '720px',
+    },
+    backgroundImage: theme => ({
+      'img-MV':"url('./assets/img/MV.png')",
+      'img-Kanata':"url('./assets/img/kanata.jpg')",
+    })
   },
   plugins: [],
 }
