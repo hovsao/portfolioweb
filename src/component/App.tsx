@@ -12,7 +12,7 @@ function App() {
       </div>
       <div className={contentsContainer}>
         <div className=" flex flex-col space-y-40">
-          <div className=" bg-red-400 bg-img-MV bg-no-repeat h-px-720 bg-contain xl:pc">
+          <div className=" bg-red-400 bg-img-MV bg-no-repeat h-px-720 bg-contain xl:pc ">
             <p>contents</p>
           </div>
           <div className= " bg-gray-500">
