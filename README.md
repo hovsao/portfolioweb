@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# portfolio-webサイト製作
+模写コーディング
+書籍
+これからはじめるfigma , マイナビ出版, 2022,
+
+## css
+tailwindcss
+
+## node
+v18.10.0
+で動作を確認
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
