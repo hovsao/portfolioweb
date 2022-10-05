@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 // emotion今回使わない
 import { css } from '@emotion/css'
-import { ServiceItem } from './ServiceItem';
+import { ServiceList } from './ServiceList';
 
 function App() {
   return (
@@ -11,21 +11,18 @@ function App() {
         <p>navigator position_absolute</p>
       </div>
       <div className={contentsContainer}>
-        <div className=" flex flex-col space-y-40">
-          <div className=" bg-red-400 bg-img-MV bg-no-repeat h-px-720 bg-contain xl:pc ">
+        <div className=" flex flex-col space-y-40 items-center">
+          <div className=" bg-red-400 bg-img-MV bg-no-repeat h-px-720 bg-contain w-pc">
             <p>contents</p>
           </div>
-          <div className= " bg-gray-500">
+          <div className= " bg-gray-500 ">
             <div className='flex flex-col space-y-16 w-fit'>
-              <div className={ServiceComponent}>
-                <p>Service</p>
+              <div className={`flex flex-col items-center ${ServiceComponent}`}>
+                <div className=' font-sans text-5xl font-bold'>Service</div>
+                <div className=' font-sans text-base text-green-400'>サービス</div>
               </div>
-              <div className={`flex flex-col space-x-16 ${cardsComponent}`}>
-                <ServiceItem></ServiceItem>
-                {/* <div className=''></div>
-                <p>card</p>
-                <p>card</p>
-                <p>card</p> */}
+              <div className={`flex flex-row space-x-16 ${cardsComponent}`}>
+                <ServiceList />
               </div>
             </div>
           </div>
