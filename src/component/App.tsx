@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
 // emotion今回使わない
-import { css } from '@emotion/css'
-import { ServiceList } from './ServiceList';
+import { css } from '@emotion/css'//後で消す
+import { Service } from './Service';
 
 function App() {
   return (
@@ -15,17 +15,7 @@ function App() {
           <div className=" bg-red-400 bg-img-MV bg-no-repeat h-px-720 bg-contain w-pc">
             <p>contents</p>
           </div>
-          <div className= " bg-gray-500 ">
-            <div className='flex flex-col space-y-16 w-fit'>
-              <div className={`flex flex-col items-center ${ServiceComponent}`}>
-                <div className=' font-sans text-5xl font-bold'>Service</div>
-                <div className=' font-sans text-base text-green-400'>サービス</div>
-              </div>
-              <div className={`flex flex-row space-x-16 ${cardsComponent}`}>
-                <ServiceList />
-              </div>
-            </div>
-          </div>
+          <Service />
           <div className= "bg-red-300">
             <p>Works</p>
           </div>
@@ -60,8 +50,6 @@ const MainVisual = css`
   background-color:blue;
 `
 
-const Service = css`
-`
 const ServiceComponent = css`
 `
 const cardsComponent = css`

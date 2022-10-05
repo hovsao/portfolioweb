@@ -6,14 +6,17 @@ const serviceItems =[
     {
         serviceName:"Graphic Design",
         serviceIconURL: icon_graphic,
+        serviceText:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
     },
     {
         serviceName:"Web Design",
         serviceIconURL: icon_web,
+        serviceText:"テキサステキサステキサステキサステキサステキサステキサステキサステキサステキサステキサステキサス",
     },
     {
         serviceName:"Graphic Direction",
         serviceIconURL: icon_direction,
+        serviceText:"テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
     },
 ];
 
@@ -27,7 +30,7 @@ export const ServiceList = () => {
                             <img src={serviceItem.serviceIconURL} alt="" />
                         </div>
                         <div className=' font-sans text-2xl font-bold'>{serviceItem.serviceName}</div>
-                        <p className=' font-sans text-sm'>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p className=' font-sans text-sm'>{serviceItem.serviceText}</p>
                     </div>
                 </>
             ))}
