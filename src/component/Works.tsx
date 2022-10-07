@@ -38,7 +38,22 @@ const cardItems =[
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
+    {
+        workURL: works06,
+        projectName:"プロジェクト名",
+        tagName:"グラフィックデザイン",
+    },
 ];
+
+const splitItems:any=[];
+
+for(let i = 0;i<cardItems.length;i+=3){
+    splitItems.push(cardItems.slice(i,i+3));
+}
+
+console.log("length:",cardItems.length);
+console.log("split array:",splitItems);
+
 
 const Card =({
     workURL,
@@ -60,19 +75,23 @@ const Card =({
 
 export const Works = () => {
     return(
-        <div className= "bg-red-300 flex flex-col space-y-20 w-fit">
+        <div className= "bg-red-300 flex flex-col space-y-20 w-fit items-center">
             <div className=' bg-blue-200 flex flex-col space-y-16'>
                 <SectionTitle 
                     sectionEng='Works'
                     sectionJp='製作実績'
                 />
-                <div className=' flex flex-row flex-wrap w-works_row'>
-                    {cardItems.map((cardItem) => (
-                        <Card
-                            workURL= {cardItem.workURL}
-                            projectName={cardItem.projectName}
-                            tagName={cardItem.tagName}
-                        />
+                <div className=' flex flex-col space-y-16 items-center'>
+                    {splitItems.map((splitItem:any) =>(
+                        <div className=' flex flex-row space-x-16 w-works_row'>
+                            {splitItem.map((cardItem:any) => (
+                                <Card
+                                    workURL= {cardItem.workURL}
+                                    projectName={cardItem.projectName}
+                                    tagName={cardItem.tagName}
+                                />
+                            ))}
+                        </div>
                     ))}
                 </div>
             </div>
@@ -80,9 +99,3 @@ export const Works = () => {
         </div>
     );
 };
-
-
-{/* <p>Works</p>
-<TmpButton
-  buttonText="Button Text"
-/> */}
