@@ -3,6 +3,7 @@ import '../App.css';
 // emotion今回使わない
 import { css } from '@emotion/css'//後で消す
 import { Service } from './Service';
+import { Works } from './Works';
 
 function App() {
   return (
@@ -16,9 +17,7 @@ function App() {
             <p>contents</p>
           </div>
           <Service />
-          <div className= "bg-red-300">
-            <p>Works</p>
-          </div>
+          <Works />
           <div className=" bg-yellow-700">
             <p>About</p>
           </div>
@@ -54,9 +53,6 @@ const ServiceComponent = css`
 `
 const cardsComponent = css`
   background-color:blue;
-`
-
-const Works = css`
 `
 
 const About = css`

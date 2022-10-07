@@ -30,6 +30,7 @@ module.exports = {
         'test': '1800px',
         '30': '120px',
         '75': '300px',
+        'works_row':'1028px',
       },
       height:{
         'px-720': '720px',
