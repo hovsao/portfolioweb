@@ -5,6 +5,7 @@ import { css } from '@emotion/css'//後で消す
 import { Service } from './Service';
 import { Works } from './Works';
 import { About } from './About';
+import { Footer } from './Footer';
 
 function App() {
   return (
@@ -20,13 +21,11 @@ function App() {
           <Service />
           <Works />
           <About />
-          {/* <div className=" bg-yellow-700">
-            <p>About</p>
-          </div> */}
         </div>
-        <div className="bg-green-600">
+        <Footer />
+        {/* <div className="bg-green-600">
           <p>footer</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
