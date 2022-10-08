@@ -30,14 +30,27 @@ module.exports = {
         'test': '1800px',
         '30': '120px',
         '75': '300px',
+        'works_row':'1028px',
+        '480px':'480px',
       },
       height:{
         'px-720': '720px',
       },
       backgroundImage:{
         'img-MV':"url('./assets/img/MV.png')",
-        'img-Kanata':"url('./assets/img/kanata.jpg')",
       },
+      padding:{
+        '30':'120px',
+      },
+      inset:{
+        'MV_position_x':'0px',
+        'MV_position_y':'228px',
+      },
+      fontSize:{
+        'selfIntro':['16px', {
+          lineHeight: '0px'
+        }]
+      }
     },
   },
   plugins: [],
