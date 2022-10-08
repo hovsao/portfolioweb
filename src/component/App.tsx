@@ -7,14 +7,16 @@ import { Works } from './Works';
 import { About } from './About';
 import { Footer } from './Footer';
 import { MainVisual } from './MainVisual';
+import { Header } from './Header';
 
 
 function App() {
   return (
     <div className={frame0}>
-      <div className="bg-red-600 xl:pc ">
+      <Header />
+      {/* <div className="bg-red-600 xl:pc ">
         <p>navigator position_absolute</p>
-      </div>
+      </div> */}
       <div className={contentsContainer}>
         <div className=" flex flex-col space-y-40 items-center">
           <MainVisual />
