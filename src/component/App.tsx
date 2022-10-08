@@ -14,9 +14,6 @@ function App() {
   return (
     <div className={frame0}>
       <Header />
-      {/* <div className="bg-red-600 xl:pc ">
-        <p>navigator position_absolute</p>
-      </div> */}
       <div className={contentsContainer}>
         <div className=" flex flex-col space-y-40 items-center">
           <MainVisual />
@@ -36,24 +33,4 @@ const frame0 = css`
 `
 
 const contentsContainer = css`
-`
-
-const Contents = css`
-  display:flex;
-  flex-direction:column;
-`
-
-// const MainVisual = css`
-//   height:720px;
-//   width:1440px;
-//   background-color:blue;
-// `
-
-const ServiceComponent = css`
-`
-const cardsComponent = css`
-  background-color:blue;
-`
-
-const footer = css`
 `

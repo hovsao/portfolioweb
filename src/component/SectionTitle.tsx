@@ -10,7 +10,7 @@ export const SectionTitle = ({
     return(
         <div className={`flex flex-col items-center`}>
             <div className=' font-sans text-5xl font-bold'>{sectionEng}</div>
-            <div className=' font-sans text-base text-green-400'>{sectionJp}</div>
+            <div className=' font-sans text-base text-Green'>{sectionJp}</div>
         </div>
     );
 };

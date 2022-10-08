@@ -50,6 +50,11 @@ module.exports = {
         'selfIntro':['16px', {
           lineHeight: '0px'
         }]
+      },
+      colors:{
+        'Green':'#296a65',
+        'light_green':'#2fac9e',
+        'Gray':'#eeeeee',
       }
     },
   },

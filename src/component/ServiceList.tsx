@@ -4,19 +4,19 @@ import icon_web from '../assets/img/icon_web.png'
 
 const serviceItems =[
     {
-        serviceName:"Graphic Design",
+        serviceName:"Frontend",
         serviceIconURL: icon_graphic,
-        serviceText:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
+        serviceText:"Reactで動きのない画面が作れます。figmaを使っています。",
     },
     {
-        serviceName:"Web Design",
+        serviceName:"Backend",
         serviceIconURL: icon_web,
-        serviceText:"テキサステキサステキサステキサステキサステキサステキサステキサステキサステキサステキサステキサス",
+        serviceText:"Laravelを使ってポートフォリオを作ります。",
     },
     {
-        serviceName:"Graphic Direction",
+        serviceName:"Infrastructure",
         serviceIconURL: icon_direction,
-        serviceText:"テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
+        serviceText:"awsを使いたいです。",
     },
 ];
 
@@ -26,7 +26,7 @@ export const ServiceList = () => {
             {serviceItems.map((serviceItem) => (
                 <>
                     <div className=" flex flex-col w-75 space-y-6 items-center">
-                        <div className=" rounded-full bg-green-900 w-36 h-36 flex justify-center items-center">
+                        <div className=" rounded-full bg-Green w-36 h-36 flex justify-center items-center">
                             <img src={serviceItem.serviceIconURL} alt="" />
                         </div>
                         <div className=' font-sans text-2xl font-bold'>{serviceItem.serviceName}</div>

@@ -1,45 +1,40 @@
 import {TmpButton} from './TmpButton';
 import {SectionTitle} from './SectionTitle';
-import works01 from '../assets/img/Works-01.png'
-import works02 from '../assets/img/Works-02.png'
-import works03 from '../assets/img/Works-03.png'
-import works04 from '../assets/img/Works-04.png'
-import works05 from '../assets/img/Works-05.png'
-import works06 from '../assets/img/Works-06.png'
+import tmp01 from '../assets/img/tmp01.png'
 
 const cardItems =[
     {
-        workURL: works01,
+        workURL: tmp01,
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
     {
-        workURL: works02,
+        workURL: tmp01,
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
     {
-        workURL: works03,
+        workURL: tmp01,
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
     {
-        workURL: works04,
+        workURL: tmp01,
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
     {
-        workURL: works05,
+        workURL: tmp01,
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
     {
-        workURL: works06,
+        workURL: tmp01,
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
     {
-        workURL: works06,
+        workURL: tmp01,
         projectName:"プロジェクト名",
         tagName:"グラフィックデザイン",
     },
@@ -68,15 +63,15 @@ const Card =({
         <div className=' flex flex-col space-y-6 items-start'>
             <img src={workURL} alt="work_img" />
             <div className=' font-sans text-lg font-bold'>{projectName}が入ります</div>
-            <div className=' font-sans text-sm bg-gray-400 px-2 py-0.5 '>{tagName}</div>
+            <div className=' font-sans text-sm bg-Gray px-2 py-0.5 rounded'>{tagName}</div>
         </div>
     );  
 };
 
 export const Works = () => {
     return(
-        <div className= "bg-red-300 flex flex-col space-y-20 w-fit items-center">
-            <div className=' bg-blue-200 flex flex-col space-y-16'>
+        <div className= " flex flex-col space-y-20 w-fit items-center">
+            <div className=' flex flex-col space-y-16'>
                 <SectionTitle 
                     sectionEng='Works'
                     sectionJp='製作実績'
