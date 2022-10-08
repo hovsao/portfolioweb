@@ -31,6 +31,7 @@ module.exports = {
         '30': '120px',
         '75': '300px',
         'works_row':'1028px',
+        '480px':'480px',
       },
       height:{
         'px-720': '720px',
@@ -39,6 +40,9 @@ module.exports = {
         'img-MV':"url('./assets/img/MV.png')",
         'img-Kanata':"url('./assets/img/kanata.jpg')",
       },
+      padding:{
+        '30':'120px',
+      }
     },
   },
   plugins: [],

@@ -4,6 +4,7 @@ import '../App.css';
 import { css } from '@emotion/css'//後で消す
 import { Service } from './Service';
 import { Works } from './Works';
+import { About } from './About';
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
           </div>
           <Service />
           <Works />
-          <div className=" bg-yellow-700">
+          <About />
+          {/* <div className=" bg-yellow-700">
             <p>About</p>
-          </div>
+          </div> */}
         </div>
         <div className="bg-green-600">
           <p>footer</p>
@@ -53,9 +55,6 @@ const ServiceComponent = css`
 `
 const cardsComponent = css`
   background-color:blue;
-`
-
-const About = css`
 `
 
 const footer = css`
