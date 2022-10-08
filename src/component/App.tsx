@@ -6,6 +6,8 @@ import { Service } from './Service';
 import { Works } from './Works';
 import { About } from './About';
 import { Footer } from './Footer';
+import { MainVisual } from './MainVisual';
+
 
 function App() {
   return (
@@ -15,17 +17,12 @@ function App() {
       </div>
       <div className={contentsContainer}>
         <div className=" flex flex-col space-y-40 items-center">
-          <div className=" bg-red-400 bg-img-MV bg-no-repeat h-px-720 bg-contain w-pc">
-            <p>contents</p>
-          </div>
+          <MainVisual />
           <Service />
           <Works />
           <About />
         </div>
         <Footer />
-        {/* <div className="bg-green-600">
-          <p>footer</p>
-        </div> */}
       </div>
     </div>
   );
@@ -44,11 +41,11 @@ const Contents = css`
   flex-direction:column;
 `
 
-const MainVisual = css`
-  height:720px;
-  width:1440px;
-  background-color:blue;
-`
+// const MainVisual = css`
+//   height:720px;
+//   width:1440px;
+//   background-color:blue;
+// `
 
 const ServiceComponent = css`
 `
